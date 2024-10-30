@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prueba Isa</title>
+  </head>
+  <body>
+    <h1>EXAMEN PHP</h1>
+    <form action="../controlador/controlador.php" method=POST>
+      <label>Introduce nombre</label>
+      <input type=text name=nombre pattern="[A-Za-z]+" required>
+      </br>
+      </br>
+      <label>Introduce apellido</label>
+      <input type=text name=apellido pattern="[A-Za-z]+" required>
+      </br>
+      </br>
+      <label>Elige el tipo de formato</label>
+      <input type=radio name=formato[] value="Apellido,Nombre" required>
+      <label>Apellido, nombre</label>
+      <input type=radio name=formato[] value="Nombre Apellido" required>
+      <label>Nombre Apellido</label>
+      </br>
+      </br>
+      <label>Elige provincia</label>
+      <select name=provincia>
+        <option value=Badajoz>Badajoz</option>
+        <option value=Caceres>Caceres</option>
+      </select>
+      </br>
+      </br>
+      <input type=submit value=enviar>
+      <input type=reset value=limpiar>
+    </form>
+  </body>
+</html>
